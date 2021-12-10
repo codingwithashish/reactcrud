@@ -6,8 +6,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+a{
+text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-pink{
+  background-color: #9c27b0 !important;
+}
+header{
+  padding: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a{
+  font-size: 1.8rem;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 600;
 }
