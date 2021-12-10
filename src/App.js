@@ -10,16 +10,13 @@ import ModeEditIcon from '@mui/icons-material/ModeEdit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { FormControl, RadioGroup, TextField, FormControlLabel, Radio} from '@mui/material';
 import Checkbox from '@mui/material/Checkbox';
+import RightArrow from '@mui/icons-material/KeyboardArrowRight';
 function App() {
   return (
     <>
     <header className="container">
-      
         <a href="">Employee Sheet</a>
-        <Box>
-          <Button variant="contained" color="secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <PersonAddIcon className="me-1"/> ADD NEW</Button>
-        </Box>
-      
+        <Button variant="contained" color="secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <PersonAddIcon className="me-1"/> ADD NEW</Button>
     </header>
 
   <div className="container">
@@ -119,7 +116,7 @@ function App() {
           </div>      
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn bg-pink text-white">Submit</button>
+          <Button variant="contained" color="secondary">Submit <RightArrow/> </Button>
         </div>
       </form>
     </div>
