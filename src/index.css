@@ -17,6 +17,10 @@ a:hover{
   background-color: #9c27b0 !important;
 }
 
+.btn:focus, .btn-close:focus{
+  box-shadow: none;
+}
+
 .css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked{
   color: #9c27b0 !important;
 }
