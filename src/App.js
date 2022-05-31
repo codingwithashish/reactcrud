@@ -28,7 +28,7 @@ function App() {
   return (
     <>
    <Header/>
-  <EmpTable/>
+   <EmpTable/>
 
  {/* modal Add new user*/}
 {/* <!-- Modal --> */}
