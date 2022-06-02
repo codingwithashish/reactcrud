@@ -26,7 +26,7 @@ const EmpTable = () => {
     <TableBody>
       <TableCell>1</TableCell>
       <TableCell>Ashish</TableCell>
-      <TableCell>kohliashish@gmail.com</TableCell>
+      <TableCell>codingwithashish@gmail.com</TableCell>
       <TableCell>1234456587</TableCell>
       <TableCell>Rishikesh</TableCell>
       <TableCell>
