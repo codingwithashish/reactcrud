@@ -20,6 +20,9 @@ const TodoModal = () => {
         setnewinputval('');
     }
 
+    const deleteIem = (id) =>{
+        console.log('deleted' + id);
+    }
     return ( <> <div
         class="modal fade"
         id="todomodal"
@@ -49,11 +52,13 @@ const TodoModal = () => {
                         <div className="list-item-wrapper">
                             <ul className="list-unstyled mt-3">
                                 {newitem.map((data, index) => {
-                                    return ( <> <li className='list-item d-flex justify-content-between px-2 mb-2'>
+                                    return ( <> <li className='list-item d-flex justify-content-between px-2 mb-2' key={index} id={index}>
                                         <span>{data}</span>
                                         <div className="action-icon">
-                                            <a href=""><ModeEditIcon/></a>
-                                            <a href="" className="text-danger"><DeleteIcon/>
+                                            {/* <a href=""><ModeEditIcon/></a> */}
+                                            <a href="#" className="text-danger" onClick={()=>{
+                                                deleteIem(index);
+                                            }}><DeleteIcon/>
                                             </a>
                                         </div>
                                     </li> </>
