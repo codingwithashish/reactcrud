@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 a{
-text-decoration: none;
+text-decoration: none !important;
 }
 a:hover{
   text-decoration: none;
@@ -46,4 +46,8 @@ header a{
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .1px;
+}
+
+.note-wrap{
+
 }

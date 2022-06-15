@@ -27,7 +27,6 @@ const TodoModal = () => {
 
     const deleteIem = (id) => {
         // console.log(`deleted ${id}`);
-
         setnewitem((prevdata) => {
             return prevdata.filter((newele, index) => {
                 return index !== id;

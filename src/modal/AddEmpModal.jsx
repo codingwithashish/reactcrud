@@ -75,7 +75,16 @@ const AddEmpModal = () => {
                             color="secondary"
                             name="phone"
                             onChange={handleChange}
-                            value={values.phone}/> {/* <FormControl component="fieldset" className="mt-3">
+                            value={values.phone}/>
+                        <TextField
+                            fullWidth
+                            label="Address"
+                            type="text"
+                            color="secondary"
+                            value={values.address}
+                            onChange={handleChange}
+                            name="address"
+                            className="mt-3"/> {/* <FormControl component="fieldset" className="mt-3">
                         <FormLabel component="legend" className="mb-0">Gender</FormLabel>
                         <RadioGroup row aria-label="gender" name="row-radio-buttons-group">
                             <FormControlLabel value="male" control={< Radio />} label="Male"/>
@@ -100,15 +109,7 @@ const AddEmpModal = () => {
                         </Select>
                     </FormControl> */}
 
-                        <TextField
-                            fullWidth
-                            label="Address"
-                            type="text"
-                            color="secondary"
-                            value={values.address}
-                            onChange={handleChange}
-                            name="address"
-                            className="mt-3"/> {/* <div className="form-check ps-0">
+                        {/* <div className="form-check ps-0">
                         <Checkbox defaultChecked color="secondary" className="ps-0"/>
                         <label className="form-check-label" for="invalidCheck">
                             Agree to terms and conditions
